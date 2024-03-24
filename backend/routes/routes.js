@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.post("/register_user",allRoutes.auth.signUp);
 router.post("/login",allRoutes.auth.login);
-router.post("/makePayment", Is_Authenticate,allRoutes.payment.doPayment); //pending
+router.post("/makePayment", Is_Authenticate,allRoutes.payment.doPayment);
 
 router.get("/getAllProducts", Is_Authenticate,allRoutes.products.allProducts);
 router.get("/getProduct", Is_Authenticate,allRoutes.products.product);
