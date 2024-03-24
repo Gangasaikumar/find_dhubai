@@ -85,8 +85,27 @@ const products_schema = new mongoose.Schema({
 products_schema.path("brand").index({ unique: false });
 const products = db.model("products", products_schema);
 
+/**
+ *  orders
+ */
+const orders_schema = new mongoose.Schema(
+  {
+    user_id: { type: String, required: true },
+    addr_id: { type: String, required: true },
+    bill: {type: Number, required: true},
+    products:{type: Object, required: true},
+    pay_id:{ type: String, required: true },
+    orderDate: { type: Number, required: true },
+    status:{type:String, required: false, default: "processing"}
+  },
+  { versionKey: false }
+);
+orders_schema.path("pay_id").index({ unique: true });
+const orders = db.model("orders", orders_schema);
+
 module.exports = {
   user_register,
   user_address,
   products,
+  orders
 };

@@ -8,6 +8,5 @@
         "password": ""
     },
     "jwtSecret": "0539656044b13df235b6d59b33a443622a66675d63811423f8eb933bc15d49714353b1d6ed55e7c13baa290bf62d002b968f29f6dd8eef8f941ad11179f2d738",
-    "stripe_key":""
-
+    "stripe_Secret_key":"sk_test_51OxW49SIU1uov8b5wauffAFMt2x2cEytxYvwybIGarxoEKiemPh5U3INH5WeOzL1msZHIskyTMOwMknXi0CiCjSS00SaLE7qEi"
 }
