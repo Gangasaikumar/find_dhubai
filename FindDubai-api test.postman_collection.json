@@ -170,7 +170,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"products\":[],\r\n    \"userId\":45\r\n}",
+					"raw": "{\r\n    \"orderItems\":[{\r\n        \"_id\":\"65ff91c587c231315184db86\",\r\n        \"model\":\"iphone 15\",\r\n        \"price\":72290,\r\n        \"quantity\":2\r\n    }],\r\n    \"addr_id\":\"65ff52fa33c9d77e1c1fcbd7\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
