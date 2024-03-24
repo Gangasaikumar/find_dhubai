@@ -1,0 +1,228 @@
+{
+	"info": {
+		"_postman_id": "4672dbb0-3e73-4dd7-b89e-7a5f982f21a0",
+		"name": "FindDubai-api test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16217208"
+	},
+	"item": [
+		{
+			"name": "register_user",
+			"request": {
+				"auth": {
+					"type": "apikey"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fn\":\"sai\",\r\n    \"ln\":\"g\",\r\n    \"eml\":\"testdatamail@gmail.com\",\r\n    \"mob\":8978733587,\r\n    \"pwd\":\"Saikumar@5\",\r\n    \"adds\":{\r\n        \"door\":\"8/3/198\",\r\n        \"locality\":\"kothisamadi veedi\",\r\n        \"village\":\"kanneluru\",\r\n        \"city\":\"hyderabad\",\r\n        \"state\":\"thelangana\",\r\n        \"pin\":500045\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6281/api/register_user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6281",
+					"path": [
+						"api",
+						"register_user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"eml\":\"testdatamail@gmail.com\",\r\n    \"pwd\":\"Saikumar@5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6281/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6281",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllProducts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6281/api/getAllProducts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6281",
+					"path": [
+						"api",
+						"getAllProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProduct",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6281/api/getProduct",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6281",
+					"path": [
+						"api",
+						"getProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getOrders",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\":56\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6281/api/getOrders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6281",
+					"path": [
+						"api",
+						"getOrders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "makePayment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"products\":[],\r\n    \"userId\":45\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6281/api/makePayment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6281",
+					"path": [
+						"api",
+						"makePayment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getLocations",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6281/api/getLocations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6281",
+					"path": [
+						"api",
+						"getLocations"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
