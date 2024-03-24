@@ -1,0 +1,13 @@
+{
+    "port":6281,
+    "mongodb": {
+        "host": "localhost",
+        "port": 27017,
+        "db": "FindDubai",
+        "user": "root",
+        "password": ""
+    },
+    "jwtSecret": "0539656044b13df235b6d59b33a443622a66675d63811423f8eb933bc15d49714353b1d6ed55e7c13baa290bf62d002b968f29f6dd8eef8f941ad11179f2d738",
+    "stripe_key":""
+
+}
