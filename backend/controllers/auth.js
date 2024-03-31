@@ -50,6 +50,7 @@ const signUp = async (api_req, api_res) => {
 
 // user login control
 const login = async (api_req, api_res) => {
+    console.log("login hit:::",api_req);
     let responce = {
         message: "bad request.!",
         data: ""

@@ -2,6 +2,7 @@ const models = require("../databses/models");
 
 // get all products data
 const allProducts = async (api_req, api_res) => {
+  console.log("callled all products:::");
   const responce = {
     message: "bad request.!",
     data: "",

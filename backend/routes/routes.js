@@ -8,8 +8,8 @@ router.post("/register_user",allRoutes.auth.signUp);
 router.post("/login",allRoutes.auth.login);
 router.post("/makePayment", Is_Authenticate,allRoutes.payment.doPayment);
 
-router.get("/getAllProducts", Is_Authenticate,allRoutes.products.allProducts);
-router.get("/getProduct", Is_Authenticate,allRoutes.products.product);
+router.get("/getAllProducts", allRoutes.products.allProducts);
+router.get("/getProduct",allRoutes.products.product);
 router.get("/getOrders", Is_Authenticate,allRoutes.userData.getOrders); //pending
 router.get("/getLocations", Is_Authenticate,allRoutes.userData.getAddresses);
 
