@@ -10,7 +10,7 @@ const getOrders= async (api_req, api_res) => {
     try {
       const user= await util.verifyTocken(api_req.cookies.Api_key);
       if("id" in user && user.id != undefined){
-      responce.message = "orders reached.!"+" user id is::"+api_req.body.userId;
+      responce.message = "orders reached.!"+" user id is::"+user.id;
         api_res.status(200).send(responce);
       }else{
         responce.message = "user data is missing.! please login again.!";

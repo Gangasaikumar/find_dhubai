@@ -14,7 +14,7 @@ const user_register_schema = new mongoose.Schema(
     pwd: { type: String, required: false }, // password
     ev: { type: Number, required: false, default: 0 }, //email verified null / 0 - not verified; 1 - verified
     mv: { type: Number, required: false, default: 0 }, //mobile verified null / 0 - not verified; 1 - verified
-    ut: { type: Number, required: false, default: 0 }, // 0 - client 1 - admin
+    ut: { type: Number, required: false, default: 0 }, //user type 0 - client 1 - admin
     rd: { type: Number, required: true }, //registered date
     sts: { type: Number, required: false, default: 1 }, // status 0 - inactive, 1 - active
   },

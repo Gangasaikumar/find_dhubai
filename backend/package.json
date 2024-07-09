@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "sai": "nodemon server.js",
+    "start": "nodemon server.js",
     "test": "npm start"
   },
   "author": "Gangasai kumar G",
